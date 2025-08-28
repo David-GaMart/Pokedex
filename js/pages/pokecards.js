@@ -7,7 +7,7 @@ export function pokecardsPage(){
                 Bibloteca de Pokemons
             </h1>
             <div>
-                <input type="text" id="searching" placeholder="Nombre de tu pokemon">
+                <input type="text" id="searching" placeholder="Busca tu pokemon... ">
             </div>
         </section>
         <section id="pokemonContainer">
