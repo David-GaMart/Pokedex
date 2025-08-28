@@ -1,0 +1,538 @@
+
+body{
+    background-color: gray;
+    color: white; 
+    margin: 0px;
+    gap: 50px;
+    font-family: "DM Sans", sans-serif;
+}
+
+header{
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+header div{
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+main{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#mainSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+
+#branchSection{
+    margin: -4px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+#upSide{
+    height: 380px;
+    width: 600px;
+    display: flex;
+    align-items: end;
+}
+
+#firstCircle{
+    height: 300px;
+    width: 300px;
+    background-color: brown;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#line{
+    height: 50px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#secondCircle{
+    height: 190px;
+    width: 190px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#center{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border: 20px solid brown;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#middleSide{
+    background-color: red;
+    border:4px double black;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    height: 45px;
+    width: 600px;
+    border-radius: 5px;
+    justify-content: flex-end;
+    display: flex;
+    gap: 15%;
+    box-shadow: 18px 0px 40px -10px rgba(0, 0, 0, 1);
+}
+
+#bottomSide{
+    height: 380px;
+    width: 600px;
+    display: flex;
+}
+
+#bottomLeft{
+    background-color: red;
+    border: 4px double black;
+    border-top-style: solid;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 90px;
+    box-shadow: 18px 0px 40px -10px rgba(0, 0, 0, 1);
+}
+
+#bottomRight{
+    background-color: red;
+    border: 4px double black;
+    border-top-style: solid;
+    height: 100%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 18px 0px 40px -10px rgba(0, 0, 0, 1);
+}
+
+#light{
+    width: 100%;
+}
+
+#startButton{
+    height: 90px;
+    width: 90px;
+    background-color: aqua;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: 5px solid white;
+}
+
+#firstScreen{
+    height: 90%;
+    width: 90%;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#screen{
+    height: 70%;
+    width: 85%;
+    background-color: rgb(200, 196, 196);
+    border-radius: 20px;
+    border: 2px solid #333;
+    overflow-y: auto; /* Scroll vertical si hay mucho contenido */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+}
+
+#bottomScreen{
+    display: flex;
+}
+
+#name{
+    color: white;
+    height: auto;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px inset gray;
+    margin-right: 5px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+#outside{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-top:4px double black;
+    border-bottom:4px double black;
+    border-right:4px double black;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: flex;
+    align-items: center;
+    box-shadow: 18px 0px 40px -10px rgba(0, 0, 0, 1);
+}
+
+#joistick{
+    height: 140px;
+    width: 170px;
+    background-color: black;
+    border-top:4px double white;
+    border-bottom:4px double white;
+    border-right:4px double white;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#centerJoitick{
+    display: flex;
+}
+
+#topButton{
+    height: 40px;
+    width: 20px;
+    background-color: grey;
+    border-radius: 5px;
+    border: 2px solid white;
+    flex-direction: center;
+    align-items: center;
+}
+
+#leftButton{
+    height: 20px;
+    width: 40px;
+    background-color: grey;
+    border-radius: 5px;
+    border: 2px solid white;
+    flex-direction: center;
+    align-items: center;
+    margin-right: 15%;
+}
+
+#rightButton{
+    height: 20px;
+    width: 40px;
+    background-color: grey;
+    border-radius: 5px;
+    border: 2px solid white;
+    flex-direction: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+#downButton{
+    height: 40px;
+    width: 20px;
+    background-color: grey;
+    border-radius: 5px;
+    border: 2px solid white;
+    flex-direction: center;
+    align-items: center;
+}
+
+.logo{
+    height: 90%;
+    width: 90%;
+}
+
+.hinge{
+    background-color: red;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    width: 40px;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.upSide{
+    background-color: red;
+    border:4px double black;
+    border-bottom-style: solid;
+    height: 100%;
+    width: 75%;
+    border-radius: 5px;
+    position: relative;
+    left: 24%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 18px 0px 40px -10px rgba(0, 0, 0, 1);
+}
+
+.greenLight{
+    height: 20px;
+    width: 20px;
+    background-color: green;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-left: -4px;
+    border: 1.5px solid black;
+}
+
+.imagen-hover{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+    background-image: url(./assets/pokeball.png);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.imagen-hover:hover {
+    background-image: url(./assets/pokeball-color.png); /* Imagen al pasar el cursor */
+    }
+
+.selection {
+    position: absolute;
+    color: grey;
+    background: white;
+    border: 1px solid #ccc;
+    width: 250px;
+    max-height: 100px;
+    overflow-y: auto;
+    z-index: 10;
+    font-family: sans-serif;
+}
+
+.selection div {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.selection div:hover,
+.selection .active {
+    color: black;
+    background-color: #e79c91;
+}
+
+
+.screenContainer{
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(169, 207, 239, 0.8);
+    width: 100%;
+    margin: 0;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.outputName::first-letter{
+    text-transform: uppercase;
+}
+
+.outputName{
+    font-size: xx-large;
+    color: rgb(48, 47, 47);
+}
+
+.screenContainer img{
+    width: 250px;
+}
+
+.pokemonPic{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5%;
+}
+
+.pokemonDes{
+    color: black;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: small;
+    font-size-adjust: auto;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.pokemonType{
+    display: flex;
+}
+
+.typeBlock{
+    margin: 5px;
+}
+
+.pokemonSkills{
+    display: flex;
+}
+
+.abilityBlock{
+    margin: 5px;
+}
+
+.typeBlock {
+    padding: 5px 15px 5px 15px;
+    margin: 5px;
+    border: 2px solid transparent;
+    width: fit-content;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Clases por tipo */
+.normal {
+    background-color: Lavender;
+    border-color: Gainsboro;
+    color: black;
+}
+
+.fighting {
+    background-color: Firebrick;
+    border-color: Darkred;
+}
+
+.flying {
+    background-color: rgb(39, 34, 178);
+    border-color: rgb(0, 7, 139);
+}
+
+.poison {
+    background-color: Mediumpurple;
+    border-color: Blueviolet;
+}
+
+.ground {
+    background-color: BurlyWood;
+    border-color: Tan;
+    color: black;
+}
+
+.rock {
+    background-color: Peru;
+    border-color: Chocolate;
+}
+
+.bug {
+    background-color: YellowGreen;
+    border-color: OliveDrab;
+}
+
+.ghost {
+    background-color: Purple;
+    border-color: Indigo;
+}
+
+.steel {
+    background-color: LightGrey;
+    border-color: Silver;
+}
+
+.fire {
+    background-color: Crimson;
+    border-color: Firebrick;
+}
+
+.water {
+    background-color: RoyalBlue;
+    border-color: MediumSlateBlue;
+}
+
+.grass {
+    background-color: Lime;
+    border-color: Limegreen;
+    color: black;
+}
+
+.electric {
+    background-color: Yellow;
+    border-color: Gold;
+    color: black;
+}
+
+.psychic {
+    background-color: Violet;
+    border-color: Plum;
+    color: black;
+}
+
+.ice {
+    background-color: AquaMarine;
+    border-color: PaleTurquoise;
+    color: black;
+}
+
+.dragon {
+    background-color: MediumSlateBlue;
+    border-color: SlateBlue;
+}
+
+.dark {
+    background-color: SlateGray;
+    border-color: Darkslategray;
+}
+
+.fairy {
+    background-color: rgb(255, 136, 238);
+    border-color: rgb(255, 187, 238);
+    color: black;
+}
+
+.stellar {
+    background-color: rgb(136, 209, 255);
+    border-color: rgb(187, 247, 255);
+    color: black;
+}
+
+.unknown {
+    background-color: rgb(223, 233, 244);
+    border-color: rgb(255, 187, 238);
+    color: black;
+}
+
+.abilityBlock {
+    padding: 5px 15px 5px 15px;
+    margin: 5px ;
+    border: 2px solid transparent;
+    width: fit-content;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: grey;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pokedexStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./PokeJS.js" defer></script>
+    <title>Pokedex</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logo" src="./assets/pokebolas.png" alt="pokeLogo">
+        </div>
+        <img src="./assets/PokedexFont.png" alt="PokedexFomt">
+        <button class="imagen-hover" onclick="window.location.href='./index.html'">
+        </button>
+    </header>    
+    <main>
+        <article id="mainSection">
+            <section id="upSide">
+                <div class="upSide">
+                    <div id="firstCircle">
+                        <div id="line">
+                            <div id="secondCircle">
+                                <div id="center">
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="middleSide">
+                <div class="hinge"></div>
+                <div class="hinge"></div>
+                <div class="hinge"></div>
+            </div>
+            <section id="bottomSide">
+                <section id="bottomLeft">
+                    <div id="light">
+                        <div class="greenLight"></div>
+                        <div class="greenLight"></div>
+                    </div>
+                    <button id="startButton"></button>
+                </section>
+                <section id="bottomRight">
+                    <div id="firstScreen">
+                        <div id="screen">
+                        </div>
+                        <div id="bottomScreen">
+                            <div id="input">
+                                <input type="text" id="name" placeholder="Nombre del pokemon"/>
+                                <div id="pokemonSelection" class="selection"></div>
+                            </div>
+                            <button id="search">Buscar</button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </article>
+        <article id="branchSection">
+            <div id="outside">
+                <div id="joistick">
+                    <div id="topButton"></div>
+                    <div id="centerJoitick">
+                        <div id="leftButton"></div>
+                        <div id="rightButton"></div>
+                    </div>
+                    <div id="downButton"></div>
+                </div>
+            </div>
+        </article>
+        </main>
+    <footer></footer>
+</body>
+</html>

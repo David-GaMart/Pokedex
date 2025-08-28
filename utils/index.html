@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./app.js" defer></script>
+    <title>Pokedex</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logo" src="./assets/pokebolas.png" alt="pokeLogo">
+        </div>
+        <img src="./assets/PokedexFont.png" alt="PokedexFomt">
+        <button class="imagen-hover" onclick="window.location.href='./pokedexV.html'">
+        </button>
+    </header>    
+    <main>
+        <section id="headerMain">
+            <h1>
+                Bibloteca de Pokemons
+            </h1>
+            <div>
+                <input type="text" id="searching" placeholder="Nombre de tu pokemon">
+            </div>
+        </section>
+        <section id="pokemonContainer">
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

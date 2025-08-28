@@ -1,0 +1,76 @@
+body{
+    background-color: gray;
+    color: white; 
+    margin: 0px;
+    gap: 50px;
+    font-family: "DM Sans", sans-serif;
+}
+
+header div{
+    height: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+}
+
+.image-hover{
+    background-color: rgba(170, 32, 32, 0);
+    border: none;
+    width: 80px;
+    height: 80px;
+    background-image: url(../assets/pokeball.png);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.image-hover:hover {
+    background-image: url(../assets/pokeball-color.png); /* Imagen al pasar el cursor */
+    }
+
+.navbar {
+    background: #222;
+    color: white;
+    padding: 1rem;
+    position: absolute;
+    top: 110px;
+    right: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-menu {
+    margin-left: auto;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    color: grey;
+}
