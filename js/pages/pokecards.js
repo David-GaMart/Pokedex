@@ -36,9 +36,12 @@ export function pokecardsPage(){
                     tipos: data.types.map((tipo) => tipo.type.name),
                     urlImage: data.sprites.front_default
                 };
+
             }));
+
             pokemonArray = allPokemons;
             createCards(allPokemons);
+            
         } catch (error) {
             console.error("Error al obtener los pokémones:", error);
         }
@@ -78,7 +81,7 @@ export function pokecardsPage(){
 
             card.addEventListener("click", () => {
                 // console.log("Pokémon seleccionado:", title.innerText);
-                cardAction(image.src, title.innerText)
+                cardAction(image.src, title.innerText.toLocaleLowerCase())
 
             // card.addEventListener("click", (box) =>{
             //     screenSection();
