@@ -11,6 +11,11 @@ export function homePage() {
             Busca, filtra y conoce más sobre tus Pokémon favoritos gracias a la 
             <a href="https://pokeapi.co/" target="_blank">PokeAPI</a>.
             </p>
+            <p>
+            Puedes iniciar dando click en la pokebola superior derecha para 
+            desplegar nuestro menu o puedes intentar dando click en alguno de 
+            los botones de abajo para comezar a interactuar con esta web!!...
+            </p>
             <div class="home-buttons">
             <a href="#cards" class="btn">Ver Pokemones</a>
             <a href="#about" class="btn btn-secondary">Acerca de</a>
