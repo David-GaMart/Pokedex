@@ -76,3 +76,13 @@
     font-weight: bold;
     text-transform: capitalize;
 }
+
+.cardInfo {
+    background-color: black;
+    position: absolute;
+    height: 75vh;
+    width: 91vw;
+    top: 20vh;
+    left: 4vw;
+
+}

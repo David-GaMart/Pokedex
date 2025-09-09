@@ -1,3 +1,5 @@
+import { cardAction } from "../components/card.js";
+
 export function pokecardsPage(){
 
     const main = document.querySelector("main");
@@ -10,6 +12,7 @@ export function pokecardsPage(){
                 <input type="text" id="searching" placeholder="Busca tu pokemon... ">
             </div>
         </section>
+        <div id="secondScreen"></div>
         <section id="pokemonContainer">
         </section>
     `;
@@ -34,6 +37,7 @@ export function pokecardsPage(){
                     urlImage: data.sprites.front_default
                 };
             }));
+            pokemonArray = allPokemons;
             createCards(allPokemons);
         } catch (error) {
             console.error("Error al obtener los pokémones:", error);
@@ -72,20 +76,24 @@ export function pokecardsPage(){
             card.appendChild(image);
             card.appendChild(title);
 
-            card.addEventListener("click", (box) =>{
-                screenSection();
+            card.addEventListener("click", () => {
+                // console.log("Pokémon seleccionado:", title.innerText);
+                cardAction(image.src, title.innerText)
+
+            // card.addEventListener("click", (box) =>{
+            //     screenSection();
             })
 
             pokemonContainer.appendChild(card);
         });
     };
 
-    const screenSection = (e) =>{
+    // const screenSection = (e) =>{
         
-    const screen = document.createElement('section');
-    screen.classList.add('screen');
-    document.body.appendChild(screen);
+    // const screen = document.createElement('section');
+    // const pokemons = document.querySelector("div.card p")
+    // cardAction(pokemons);
 
-    };
+    // };
 
 }
