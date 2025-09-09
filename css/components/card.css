@@ -79,10 +79,11 @@
 
 .cardInfo {
     background-color: black;
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     height: 75vh;
     width: 91vw;
     top: 20vh;
     left: 4vw;
-
+    text-transform: capitalize;
 }
