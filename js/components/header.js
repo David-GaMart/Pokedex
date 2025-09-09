@@ -19,6 +19,19 @@ export function createHeader() {
     button.addEventListener("click", () => {
         navbar.classList.toggle("hidden");
     });
-    
+
+// 👉 Cierra el navbar si haces click en el main
+document.querySelector("main").addEventListener("click", () => {
+    if (button.classList.contains("hidden")) {
+        button.classList.remove("hidden");
+    }
+});
+
+// 👉 Cierra el navbar si cambias de hash
+window.addEventListener("hashchange", () => {
+    if (button.classList.contains("hidden")) {
+        button.classList.remove("hidden");
+    }
+});
     return header;
 };
